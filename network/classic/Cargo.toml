@@ -7,4 +7,4 @@ authors = ["Wei Tang <hi@that.world>"]
 
 [dependencies]
 sputnikvm = { path = "../..", default-features =  false }
-etcommon-bigint = { path = "../../../thirdparties/etcommon-rs/bigint", default-features = false }
+etcommon-bigint = { path = "../../../etcommon-rs/bigint", default-features = false }

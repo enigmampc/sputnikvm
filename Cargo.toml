@@ -15,9 +15,9 @@ sha3 = "0.6"
 sha2 = "0.6"
 ripemd160 = "0.6"
 digest = "0.6"
-etcommon-block-core = { path = "../thirdparties/etcommon-rs/block-core", default-features = false }
+etcommon-block-core = { path = "../etcommon-rs/block-core", default-features = false }
 etcommon-rlp = { version = "0.2", default-features = false }
-etcommon-bigint = { path = "../thirdparties/etcommon-rs/bigint", default-features = false, features = ["rlp"] }
+etcommon-bigint = { path = "../etcommon-rs/bigint", default-features = false, features = ["rlp"] }
 
 etcommon-block = { version = "0.3", default-features = false, optional = true }
 secp256k1-plus = { version = "0.5.7", optional = true }
