@@ -10,4 +10,8 @@ repository = "https://github.com/ethereumproject/sputnikvm"
 sputnikvm = { version = "0.10", path = "../.." }
 sputnikvm-precompiled-bn128 = { version = "0.10", path = "../../precompiled/bn128" }
 sputnikvm-precompiled-modexp = { version = "0.10", path = "../../precompiled/modexp" }
-etcommon-bigint = { version = "0.2", default-features = false }
+
+[dependencies.etcommon-bigint]
+git = "https://github.com/enigmampc/etcommon-rs.git"
+rev = "develop"
+default-features = false
