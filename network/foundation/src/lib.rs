@@ -1,3 +1,4 @@
+#![no_std]
 extern crate bigint;
 extern crate sputnikvm;
 // extern crate sputnikvm_precompiled_modexp;
