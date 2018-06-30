@@ -15,13 +15,33 @@ sha3 = "0.6"
 sha2 = "0.6"
 ripemd160 = "0.6"
 digest = "0.6"
-etcommon-block-core = { version = "0.1", default-features = false }
-etcommon-rlp = { version = "0.2", default-features = false }
-etcommon-bigint = { version = "0.2", default-features = false, features = ["rlp"] }
 
-etcommon-block = { version = "0.3", default-features = false, optional = true }
 secp256k1-plus = { version = "0.5.7", optional = true }
 libsecp256k1 = { version = "0.1", optional = true }
+
+
+[dependencies.etcommon-block-core]
+git = "https://github.com/enigmampc/etcommon-rs.git"
+rev = "develop"
+default-features = false
+
+[dependencies.etcommon-block]
+git = "https://github.com/enigmampc/etcommon-rs.git"
+rev = "develop"
+default-features = false
+optional = true
+
+[dependencies.etcommon-rlp]
+git = "https://github.com/enigmampc/etcommon-rs.git"
+rev = "develop"
+default-features = false
+
+[dependencies.etcommon-bigint]
+git = "https://github.com/enigmampc/etcommon-rs.git"
+rev = "develop"
+default-features = false
+features = ["rlp"]
+
 
 [dev-dependencies]
 etcommon-hexutil = "0.2"

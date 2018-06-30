@@ -2,6 +2,7 @@
 
 #[cfg(not(feature = "std"))]
 use alloc::Vec;
+use alloc::boxed::Box;
 
 #[cfg(not(feature = "std"))] use alloc::rc::Rc;
 #[cfg(feature = "std")] use std::rc::Rc;

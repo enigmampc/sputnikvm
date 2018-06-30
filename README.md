@@ -1,12 +1,11 @@
 # SputnikVM: A Blockchain Virtual Machine
 
-[![Build Status](https://travis-ci.org/ethereumproject/sputnikvm.svg?branch=master)](https://travis-ci.org/ethereumproject/sputnikvm)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
 
 | Name               | Description                                   | Crates.io                                                                                                           | Documentation                                                                                        |
 |--------------------|:---------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------:|
-| sputnikvm          | Core library for the Ethereum Virtual Machine | [![crates.io](https://img.shields.io/crates/v/sputnikvm.svg)](https://crates.io/crates/sputnikvm)                   | [![Documentation](https://docs.rs/sputnikvm/badge.svg)](https://docs.rs/sputnikvm)                   |
-| sputnikvm-stateful | Merkle Trie stateful wrapper for SputnikVM    | [![crates.io](https://img.shields.io/crates/v/sputnikvm-stateful.svg)](https://crates.io/crates/sputnikvm-stateful) | [![Documentation](https://docs.rs/sputnikvm-stateful/badge.svg)](https://docs.rs/sputnikvm-stateful) |
+| sputnikvm          | Core library for the Ethereum Virtual Machine | N/A                   | [![Documentation](https://docs.rs/sputnikvm/badge.svg)](https://docs.rs/sputnikvm)                   |
+| sputnikvm-stateful | Merkle Trie stateful wrapper for SputnikVM    | N/A | [![Documentation](https://docs.rs/sputnikvm-stateful/badge.svg)](https://docs.rs/sputnikvm-stateful) |
 
 SputnikVM is an implementation of an Ethereum Virtual Machine. It aims to be an
 efficient, pluggable virtual machine for different Ethereum-based blockchains.

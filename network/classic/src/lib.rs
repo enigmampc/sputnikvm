@@ -1,7 +1,11 @@
+#![cfg_attr(not(target_env = "sgx"), no_std)]
+#![cfg_attr(target_env = "sgx", feature(rustc_private))]
+#![cfg_attr(not(feature = "std"), feature(alloc))]
+
 extern crate bigint;
 extern crate sputnikvm;
 
-use std::marker::PhantomData;
+use core::marker::PhantomData;
 use bigint::{Gas, U256, H160, Address};
 use sputnikvm::{Precompiled, AccountPatch, Patch,
                 ID_PRECOMPILED, ECREC_PRECOMPILED, SHA256_PRECOMPILED, RIP160_PRECOMPILED};

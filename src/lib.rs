@@ -285,11 +285,11 @@ impl<M: Memory + Default, P: Patch> ContextVM<M, P> {
     pub fn current_machine(&self) -> &Machine<M, P> {
         self.machines.last().unwrap()
     }
-
+/*
     /// Add a new context history hook.
     pub fn add_context_history_hook<F: 'static + Fn(&Context)>(&mut self, f: F) {
         self.runtime.context_history_hooks.push(Box::new(f));
-    }
+    }*/
 }
 
 impl<M: Memory + Default, P: Patch> VM for ContextVM<M, P> {
