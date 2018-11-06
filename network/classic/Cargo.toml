@@ -8,7 +8,9 @@ authors = ["Wei Tang <hi@that.world>"]
 [dependencies]
 sputnikvm = { path = "../..", default-features =  false }
 
-[dependencies.etcommon-bigint]
-git = "https://github.com/enigmampc/etcommon-rs.git"
-rev = "develop"
-default-features = false
+etcommon-bigint = { version = "0.2", default-features = false }
+
+# [dependencies.etcommon-bigint]
+# git = "https://github.com/enigmampc/etcommon-rs.git"
+# rev = "develop"
+# default-features = false
