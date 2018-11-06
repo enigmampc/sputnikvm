@@ -19,28 +19,32 @@ digest = "0.6"
 secp256k1-plus = { version = "0.5.7", optional = true }
 libsecp256k1 = { version = "0.1", optional = true }
 
+etcommon-block-core = { version = "0.3", default-features = false }
+etcommon-block = { version = "0.5", default-features = false, optional = true }
+etcommon-rlp = { version = "0.2", default-features = false }
+etcommon-bigint = { version = "0.2", default-features = false, features = ["rlp"] }
 
-[dependencies.etcommon-block-core]
-git = "https://github.com/enigmampc/etcommon-rs.git"
-rev = "develop"
-default-features = false
+# [dependencies.etcommon-block-core]
+# git = "https://github.com/enigmampc/etcommon-rs.git"
+# rev = "develop"
+# default-features = false
 
-[dependencies.etcommon-block]
-git = "https://github.com/enigmampc/etcommon-rs.git"
-rev = "develop"
-default-features = false
-optional = true
+# [dependencies.etcommon-block]
+# git = "https://github.com/enigmampc/etcommon-rs.git"
+# rev = "develop"
+# default-features = false
+# optional = true
 
-[dependencies.etcommon-rlp]
-git = "https://github.com/enigmampc/etcommon-rs.git"
-rev = "develop"
-default-features = false
+# [dependencies.etcommon-rlp]
+# git = "https://github.com/enigmampc/etcommon-rs.git"
+# rev = "develop"
+# default-features = false
 
-[dependencies.etcommon-bigint]
-git = "https://github.com/enigmampc/etcommon-rs.git"
-rev = "develop"
-default-features = false
-features = ["rlp"]
+# [dependencies.etcommon-bigint]
+# git = "https://github.com/enigmampc/etcommon-rs.git"
+# rev = "develop"
+# default-features = false
+# features = ["rlp"]
 
 
 [dev-dependencies]

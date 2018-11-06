@@ -1,7 +1,8 @@
 //! VM Runtime
 
 #[cfg(not(feature = "std"))]
-use alloc::Vec;
+use alloc::vec::Vec;
+#[cfg(not(feature = "std"))]
 use alloc::boxed::Box;
 
 #[cfg(not(feature = "std"))] use alloc::rc::Rc;

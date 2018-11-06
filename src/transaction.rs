@@ -1,7 +1,7 @@
 //! Transaction related functionality.
 
 #[cfg(not(feature = "std"))]
-use alloc::Vec;
+use alloc::vec::Vec;
 
 #[cfg(not(feature = "std"))] use alloc::rc::Rc;
 #[cfg(feature = "std")] use std::rc::Rc;
@@ -9,7 +9,7 @@ use alloc::Vec;
 #[cfg(feature = "std")] use std::collections::{HashSet as Set, hash_map as map};
 #[cfg(feature = "std")] use std::cmp::min;
 #[cfg(feature = "std")] use std::ops::Deref;
-#[cfg(not(feature = "std"))] use alloc::{BTreeSet as Set, btree_map as map};
+#[cfg(not(feature = "std"))] use alloc::collections::{BTreeSet as Set, btree_map as map};
 #[cfg(not(feature = "std"))] use core::cmp::min;
 #[cfg(not(feature = "std"))] use core::ops::Deref;
 use bigint::{U256, H256, Address, Gas};
@@ -260,6 +260,7 @@ impl ValidTransaction {
                     is_static
                 })
             },
+            TransactionAction::Create2(_,_) => { unimplemented!() },
         }
     }
 
@@ -457,6 +458,7 @@ impl<M: Memory + Default, P: Patch> VM for TransactionVM<M, P> {
                 ccode_deposit = match transaction.action {
                     TransactionAction::Call(_) => false,
                     TransactionAction::Create => true,
+                    TransactionAction::Create2(_,_) => { unimplemented!() },
                 };
                 cgas = transaction.intrinsic_gas::<P>();
                 cpreclaimed_value = transaction.preclaimed_value();
